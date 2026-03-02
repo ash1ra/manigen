@@ -1,6 +1,6 @@
 [project]
 name = "manigen"
-version = "1.0.0"
+version = "1.0.1"
 description = "Fast and reliable manifest generator for ML/DL datasets"
 readme = "README.md"
 license = { file = "LICENSE" }
