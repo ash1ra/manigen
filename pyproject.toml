@@ -1,12 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "manigen"
-version = "1.0.1"
+version = "1.0.2"
+dependencies = []
+requires-python = ">=3.10"
+authors = [{ name = "ash1ra" }]
 description = "Fast and reliable manifest generator for ML/DL datasets"
 readme = "README.md"
-license = { file = "LICENSE" }
-authors = [{ name = "ash1ra" }]
-requires-python = ">=3.10"
-dependencies = []
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"License :: OSI Approved :: Apache Software License",
+	"Intended Audience :: Developers",
+	"Intended Audience :: Education",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3.13",
+	"Programming Language :: Python :: 3.14",
+]
 
 [dependency-groups]
 dev = [
@@ -14,13 +31,12 @@ dev = [
 	"ruff>=0.15.4",
 ]
 
-[tool.ruff]
-line-length = 120
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+[project.urls]
+Repository = "https://github.com/ash1ra/manigen"
+Issues = "https://github.com/ash1ra/manigen/issues"
 
 [project.scripts]
 manigen = "manigen.cli:main"
 
+[tool.ruff]
+line-length = 120
